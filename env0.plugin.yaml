@@ -3,7 +3,7 @@ icon: https://i.imgur.com/Xfigdqj.jpeg
 inputs: {}
 run:
   exec: |
-    if [[ ! -d env0-eks-credential-plugin ]]; then
+    if [[ ! -d env0-plugin-eks-credentials ]]; then
       git clone --depth=1 --single-branch https://github.com/Slickdeals/env0-plugin-eks-credentials
     fi
-    ./env0-eks-credential-plugin/set-eks-credential.sh
+    ./env0-plugin-eks-credentials/set-eks-credential.sh
